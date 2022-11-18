@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+
+		/** using the style that practice first **/
+		h1 {font-family: tahoma; color: purple; font-weight: 50000;}
+		h2 {font-family: tahoma; font-weight: 50000;}
+		p {font-weight:lighter;}
+		em {font-family: helvetica;}
+
+		/** using ID/class/inherits/conflict **/ 
+		span {color: green;}
+		.extra span {color: inherit;}
+		.useClass {background-color: purple; color: white;}
+		#useID {background-color: black; color: white;}
+		li em {color: green;}
+		h1,em {color: brown;}
+
+	</style>
+</head>
+<body>
+	<h1>Title</h1>
+	<p>HERE <em>trying to write something important.</em></p>
+	<h2>Subtitle</h2>
+	<p>I am trying to write a lot of words.</p>
+
+	<!-- using class -->
+	<p class="useClass"> Trying to implement class.</p>
+
+	<!-- using ID -->
+	<p id="useID"> Nothing to write</p>
+
+	<!-- using inherits -->
+	<div class="extra"; style="color: purple; background-color: yellow;">
+		Trying to use <span>inherit.</span>
+	</div>
+
+	<!-- using conflicts -->
+	<ul>
+		<li>Pencil:
+			<ul>
+				<li>White pencil</li>
+				<li>Red pencil</li>
+			</ul>
+		</li>
+		<li>Pizza:
+			<ul>
+				<li><em>Good to use.</em></li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>
