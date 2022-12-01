@@ -1,0 +1,94 @@
+@media screen and (max-width:700px)
+{
+    body { background-color: black;}
+}
+
+@media print
+{
+    body { color: aqua;}
+}
+
+:placeholder-shown{
+    padding-left: 1.5%;
+}
+.floated{
+    float: left;
+    padding-top: 0.7%;
+    padding-left: 1%;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.floatedRight{
+    float:right;
+    padding-top: 0.7%;
+    padding-right: 3%;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.floatedText{
+    float: left;
+    padding-top: 0.7%;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+
+
+
+.line{
+    border-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 5%;
+    color: lightgray;
+    margin-top: 1.5%;
+    height: 25px;
+    width: 92.5%;
+    float: right;
+}
+
+.shortLine{
+    border-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 5%;
+    color: lightgray;
+    margin-top: 1.5%;
+    height: 25px;
+    width: 40%;
+    float: right;
+}
+
+.shortLineLeft{
+    border-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 5%;
+    color: lightgray;
+    margin-left: 1.2%;
+    margin-top: 1.5%;
+    height: 25px;
+    width: 40%;
+    float: left;
+}
+
+.text{
+    border-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 2px;
+    color: lightgray;
+    margin-top: 1.5%;
+    height: 80px;
+    width: 93.9%;
+    float: right;
+    resize: none;
+}
+
+.pic{
+    margin-top: 1.5%;
+    margin-left: 2%;
+    width: 93%;
+    float: left;
+}
