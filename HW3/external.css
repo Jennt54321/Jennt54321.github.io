@@ -8,6 +8,11 @@
     body { color: aqua;}
 }
 
+form{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 :placeholder-shown{
     padding-left: 1.5%;
 }
