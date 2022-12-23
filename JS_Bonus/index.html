@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        
+        var inputData = window.prompt('input data');
+        var inputChar = window.prompt('input a char to search');
+
+
+        for (var i=0; i<inputData.length; i++)
+        {
+            if (findMatch(inputData.charAt(i)) == "True")
+            {
+                document.write(i + " ");
+            }
+        }
+        
+
+        function findMatch(char)
+        {
+            if (inputChar == char)
+            {
+                return "True";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

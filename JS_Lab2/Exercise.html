@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        var int1, int2, int3, max;
+        int1 = window.prompt("Enter first number:");
+        int2 = window.prompt("Enter second number:");
+        int3 = window.prompt("Enter third number:");
+
+        if (int1>=int2){
+            max = int1;
+            if (max<=int3){
+                max = int3;
+            }
+        } else if (int2>=int3){
+            max = int2;
+        } else{
+            max = int3;
+        }
+
+        document.writeln("<p>First number: " + int1 + "</p>" + "<p>Second number: " + int2 + "</p>" + "<p>Third number: " + int3 + "</p>" + "<p>Max is " + max + "</p>");
+    </script>
+</body>
+</html>
