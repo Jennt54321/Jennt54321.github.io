@@ -1,0 +1,87 @@
+@startuml
+class IB {
+~ double REQUIREDCREDITS
+~ double PARTIALLYREQUIREDCREDITS
+~ double TOTALCREDITS
+~ double SELECTIVENEED
+~ double required
+~ double partiallyRequired
+~ double selective
++ void requiredJudgement(ArrayList<Course>)
++ void selectiveJudgement(ArrayList<Course>)
++ void partiallyRequiredJudgement(ArrayList<Course>)
++ void generalRequirement(ArrayList<Course>)
++ void PERequirement()
++ void summarize()
+}
+class Course {
+- String name
+- double credits
+- String category
+- String subcateogry
++ <<Create>> Course(String,double,String,String)
++ <<Create>> Course(String,double,String)
++ String getName()
++ void setName(String)
++ String getCategory()
++ void setCategory(String)
++ String getSubcategory()
++ void setSubcategory(String)
++ double getCredits()
++ void setCredits(double)
+}
+class Main {
++ {static} void main(String[])
++ {static} Department deptSelector(String)
+}
+class ACCT {
+~ double REQUIREDCREDITS
+~ double PARTIALLYREQUIREDCREDITS
+~ double TOTALCREDITS
+~ double SELECTIVENEED
+~ double required
+~ double partiallyRequired
+~ double selective
++ void requiredJudgement(ArrayList<Course>)
++ void selectiveJudgement(ArrayList<Course>)
++ void partiallyRequiredJudgement(ArrayList<Course>)
++ void generalRequirement(ArrayList<Course>)
++ void PERequirement()
++ void summarize()
+}
+class Department {
+# ArrayList<Course> generalCourses
+# ArrayList<Course> PE
+# ArrayList<Course> requireds
+# ArrayList<Course> selectives
+# ArrayList<Course> partiallyRequireds
+# ArrayList<Boolean> requirements
+~ double generalCredits
+~ double GENERALCREDITSNEEDED
+~ double PECREDITSNEEDED
+~ boolean graduationRequirement
++ void requiredJudgement()
++ void selectiveJudgement()
++ void addCourse(Course)
++ void PERequirement()
++ void generalRequirement(ArrayList<Course>)
++ boolean generalLimitRequirement(Course,double,double)
++ double generalLimitRequirement(Course,double,double,double)
++ void summarize()
+}
+class BA {
+~ double REQUIREDCREDITS
+~ double TOTALCREDITS
+~ double SELECTIVENEED
+~ double required
+~ double selective
++ void requiredJudgement(ArrayList<Course>)
++ void selectiveJudgement(ArrayList<Course>)
++ void summarize()
+}
+
+
+Department <|-- IB
+Department <|-- ACCT
+Department <|-- BA
+@enduml
